@@ -56,7 +56,7 @@
 
       <!-- header-section -->
       <div class="header-message">
-        <p class="message">01 days : 22 hours : 17 minutes till our next summit</p>
+        <p class="message-p">01 days : 22 hours : 17 minutes till our next summit</p>
       </div>
       <header class="b-header">
         <div class="b-header-in">
@@ -111,12 +111,13 @@
         
         <!-- u-power-section -->
         <section class="u-power-section">
+          <img src="images/ppm-gpt/u-power-top-right.png" alt="" class="u-power-top-shape">
           <div class="container">
             <div class="u-power-section__inner">
 
               <!-- u-power-title -->
               <div class="u-power-title">
-                <h1 class="h1">Unleash the power <span class="style-1">of PMM-GPT</span></h1>
+                <h1 class="h1">Unleash the power <br class=""> <span class="style-1">of PMM-GPT</span></h1>
                 <p>Advice and answers from PMM-GPT</p>
               </div>
               <!-- u-power-title-end -->
@@ -125,18 +126,34 @@
               <div class="up-ques">
                 <div class="up-ques__title">
                   <h2 class="h2">PMM-GPT</h2>
-                  <div class="buttons">
-                    <a href="" class="default-button">Share response</a>
-                    <a href="" class="default-button default-button--bordered">PMM-GPT Guide</a>
+                  <div class="buttons t-mobile-hide">
+                    <a href="" class="button default-button">
+                      <i class="far fa-external-link-alt"></i> 
+                      <span class="txt">Share response</span>
+                    </a>
+                    <a href="" class="button default-button default-button--bordered">
+                      <span class="txt">PMM-GPT Guide</span>
+                      <i class="far fa-chevron-down"></i>
+                    </a>
                   </div>
                 </div>
                 <div class="ind-input">
-                  <input type="text" class="input" placeholder="Type your question here... (Active state, when clicked / while typing)">
+                  <input type="text" class="input" placeholder="Type your questions here...">
                   <div class="send-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                       <path d="M3.51 6.53L11.02 9.75L3.5 8.75L3.51 6.53ZM11.01 15.25L3.5 18.47V16.25L11.01 15.25ZM1.51 3.5L1.5 10.5L16.5 12.5L1.5 14.5L1.51 21.5L22.5 12.5L1.51 3.5Z" fill="#AEAEAE"/>
                     </svg>
                   </div>
+                </div>
+                <div class="up-ques__title-mobile-buttons ex-t-mobile-hide">
+                  <a href="" class="button default-button">
+                    <i class="far fa-external-link-alt"></i> 
+                    <span class="txt">Share response</span>
+                  </a>
+                  <a href="" class="button default-button default-button--bordered">
+                    <span class="txt">PMM-GPT Guide</span>
+                    <i class="far fa-chevron-down"></i>
+                  </a>
                 </div>
               </div>
               <!-- up-ques-end -->
@@ -152,52 +169,56 @@
                       <div class="up-ans__m-box">
                         <div class="up-ans__m-box__abtr"></div>
                         <div class="up-ans__m-box__ms">
-                          <div class="up-ans__m-box__ms__field"></div>
+                          <textarea class="up-ans__m-box__ms__field"></textarea>
                           <div class="up-ans__m-box__ms__bt">
-                            <div class="up-ans__m-box__ms__bt__left">
-                              <a href="#" class="default-button"> <span class="txt">My prompts</span></a>
-                              <a href="#"><i class="far fa-bookmark"></i></a>
-                              <a href="#"><i class="far fa-external-link-alt"></i></a>
+                            <div class="up-ans__m-box__ms__bt__options">
+                              <a href="#" class="buttons default-button"> 
+                                <i class="fal fa-clone fa-rotate-180"></i>
+                                <span class="txt">My prompts</span>
+                              </a>
+                              <a class="icon-button" href="#"><i class="far fa-bookmark"></i></a>
+                              <a class="icon-button" href="#"><i class="far fa-external-link-alt"></i></a>
                             </div>
                             <div class="up-ans__m-box__ms__bt__ask">
                               <p>Was this answer helpful?</p>
                               <div class="up-ans__m-box__ms__bt__ask__options">
-                                <a href="#"><i class="fal fa-thumbs-up"></i></a>
-                                <a href="#"><i class="fal fa-thumbs-down"></i></a>
+                                <a class="option-a" href="#"><i class="fal fa-thumbs-up"></i></a>
+                                <a class="option-a" href="#"><i class="fal fa-thumbs-down"></i></a>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!-- side -->
-                    <div class="up-ans__side">
-                      <div class="xq-group">
-                        <div class="xq-group__title">
-                          <h3>Popular questions</h3>
-                        </div>
-                        <div class="xq__list">
-                          <div class="xq_item">
-                            <div class="icon"><i class="fal fa-question-circle"></i></div>
-                            <div class="text">How do you build a product marketing team?</div>
-                          </div>
-                          <div class="xq_item">
-                            <div class="icon"><i class="fal fa-question-circle"></i></div>
-                            <div class="text">How do you build a product marketing team?</div>
-                          </div>
-                          <div class="xq_item">
-                            <div class="icon"><i class="fal fa-question-circle"></i></div>
-                            <div class="text">How do you build a product marketing team?</div>
-                          </div>
-                          <div class="xq_item">
-                            <div class="icon"><i class="fal fa-question-circle"></i></div>
-                            <div class="text">How do you build a product marketing team?</div>
-                          </div>
-                        </div>
+                    
+                  </div>
+                  <!-- side -->
+                  <div class="up-ans__side">
+                    <div class="xq-group">
+                      <div class="xq-group__title">
+                        <h3>Popular questions</h3>
+                      </div>
+                      <div class="xq__list">
+                        <a href="#" class="xq_item">
+                          <div class="icon"><i class="fal fa-question-circle"></i></div>
+                          <div class="text">How do you build a product marketing team?</div>
+                        </a>
+                        <a href="#" class="xq_item">
+                          <div class="icon"><i class="fal fa-question-circle"></i></div>
+                          <div class="text">How do you build a product marketing team?</div>
+                        </a>
+                        <a href="#" class="xq_item">
+                          <div class="icon"><i class="fal fa-question-circle"></i></div>
+                          <div class="text">How do you build a product marketing team?</div>
+                        </a>
+                        <a href="#" class="xq_item">
+                          <div class="icon"><i class="fal fa-question-circle"></i></div>
+                          <div class="text">How do you build a product marketing team?</div>
+                        </a>
                       </div>
                     </div>
-                    <!-- side-end -->
                   </div>
+                  <!-- side-end -->
                 </div>
               </div>
               <!-- up-ans-end -->
@@ -208,23 +229,44 @@
         <!-- u-power-section-end -->
 
 
+        <!-- contribute-section -->
+        <section class="contribute-section">
+          <img src="images/ppm-gpt/contibute-sec-bottom-shape.png" alt="" class="contribute-bottom-bg-shape">
+          <div class="container">
+            <div class="contribute-section__inner">
+              <img src="images/ppm-gpt/con-br-white-shape.png" alt="" class="cont-in-br-shape">
+              <div class="contribute-content">
+                <h3 class="h3-d">
+                  <span>Contribute to</span>
+                  <div class="stl-1">PMM-GPT...</div>
+                  <img class="h3-shape" src="images/ppm-gpt/con-h3-shape.png" alt="">
+                </h3>
+                <p>Your expertise matters. Help us elevate PMM-GPT and be a part of its learning journey.</p>
+                <a href="#" class="default-button bottom-button">Partner with PMM-GPT</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contribute-section-end -->
+
+
         <!-- b-mark-section -->
         <section class="b-mark-section">
           <div class="container">
             <div class="b-mark-section__inner">
               <!-- content -->
-              <div class="b-mark__inner__content">
-                <h3>
-                  <span>Benchmark your</span>
+              <div class="b-mark__content">
+                <h3 class="h3-d">
+                  <span>Benchmark your</span> <br class="t-mobile-hide">
                   <span class="stl-1">product marketing skills</span>
                 </h3>
                 <p>Let us know your experience in key PMM competencies and we'll give you a tailormade framework to lean in on your strengths and identify opportunities for professional growth.</p>
                 <div class="el-shape">
                   <img src="images/ppm-gpt/b-mark-title-bt-shape.svg" alt="">
                 </div>
-                <div class="bottom-button">
-                  <a href="#" class="default-button default-button--dark">See full framework</a>
-                  <a href="#" class="default-button default-button--bordered-dark">Take PMM IQ test</a>
+                <div class="bottom-buttons">
+                  <a href="#" class="button default-button default-button--dark">See full framework</a>
+                  <a href="#" class="button default-button default-button--bordered-dark">Take PMM IQ test</a>
                 </div>
               </div>
               <!-- content-end -->
@@ -244,11 +286,12 @@
 
         <!-- f2-section -->
         <section class="f2-section">
+          <img src="images/ppm-gpt/f2-sec-bottom-ellipse.png" alt="" class="f2-sec-bottom-ellipse">
           <div class="container">
             <div class="f2-section__inner">
               <!-- content -->
               <div class="f2-sec__content">
-                <h2>Certified PMMs <span class="stl-1">earn $7,168 more</span></h2>
+                <h3 class="h3-d">Certified PMMs <div class="stl-1">earn $7,168 more</div></h3>
                 <p>Looking to compare your PMM salary to others’ across the globe and see where you can progress up the career ladder? Try our salary calculator!</p>
                 <a href="#" class="bottom-button default-button">Calculate your salary</a>
               </div>
@@ -269,10 +312,15 @@
         <section class="love-p-section">
           <div class="container">
             <div class="love-p-section__inner">
-              <div class="love-p-section__content">
-                <h2>Loving PMM-GPT? <span class="stl-1">Upgrade now...</span></h2>
+              <div class="love-p__content">
+                <h2 class="h3-d">Loving PMM-GPT? <div class="stl-1">Upgrade now...</div></h2>
+                <div class="title-line-1">
+                  <img src="images/ppm-gpt/love-p-title-line.png" alt="">
+                </div>
                 <p>Get personalized advice from real Product Marketing pros. Don't just chat with a bot—talk to an expert.</p>
-                <a href="#" class="default-button bottom-button">Become a member</a>
+                <div class="bottom-buttons">
+                  <a href="#" class="default-button bottom-button default-button--dark">Become a member</a>
+                </div>
               </div>
             </div>
           </div>

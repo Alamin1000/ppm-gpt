@@ -2,12 +2,102 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@font-face {
+  font-family: 'Ivy Journal';
+  src: url('webfonts/IvyJournal-SemiBold.woff') format('woff'),
+      url('webfonts/IvyJournal-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ivy Journal';
+  src: url('webfonts/IvyJournal-LightItalic.woff') format('woff'),
+      url('webfonts/IvyJournal-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ivy Journal';
+  src: url('webfonts/IvyJournal-Regular.woff') format('woff'),
+      url('webfonts/IvyJournal-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ivy Journal';
+  src: url('webfonts/IvyJournal-Light.woff') format('woff'),
+      url('webfonts/IvyJournal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ivy Journal';
+  src: url('webfonts/IvyJournal-BoldItalic.woff') format('woff'),
+      url('webfonts/IvyJournal-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ivy Journal';
+  src: url('webfonts/IvyJournal-Bold.woff') format('woff'),
+      url('webfonts/IvyJournal-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ivy Journal';
+  src: url('webfonts/IvyJournal-ThinItalic.woff') format('woff'),
+      url('webfonts/IvyJournal-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ivy Journal';
+  src: url('webfonts/IvyJournal-Thin.woff') format('woff'),
+      url('webfonts/IvyJournal-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ivy Journal';
+  src: url('webfonts/IvyJournal-Italic.woff') format('woff'),
+      url('webfonts/IvyJournal-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ivy Journal';
+  src: url('webfonts/IvyJournal-SemiBoldItalic.woff') format('woff'),
+      url('webfonts/IvyJournal-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
 :root {
   --theme__color1: #4F36D6;
   --theme__color2: #FFA274;
   --theme__color3: #FF5C4D;
   --theme__color4: #ED3D69;
   --poppins: 'Poppins', sans-serif;
+  --IvJournal: 'Ivy Journal';
 }
 *,::before,::after {
   box-sizing: border-box;
@@ -123,6 +213,21 @@ p:last-child{
 
 
 /* ---b-header--- */
+
+.header-message {
+  padding: 24px 32px;
+  background: linear-gradient(90deg, #FF7369 0%, #D83848 111.81%);
+  color: #fff;
+}
+.header-message .message-p {
+  font-size: 16px;
+  color: #09100F;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  text-align: center;
+}
+
 .b-header {
 
 }
@@ -207,6 +312,9 @@ p:last-child{
 .offcanvas-open {
   font-size: 22px;
   transition: 0.3s;
+}
+.offmenu-open {
+  display: none;
 }
 .offcanvas-open:hover {
   color: var(--theme__color1);
@@ -713,3 +821,475 @@ p:last-child{
   color: #F2F6F8;
 }
 /* ---guest-modal---end */
+
+
+/* ---u-power-section--- */
+.u-power-section {
+  padding: 80px 0;
+  background: #0A100F;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.u-power-top-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.u-power-section__inner {
+
+}
+.u-power-title {
+  margin-bottom: 80px;
+}
+.u-power-title .h1 {
+  font-size: 96px;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 86px; /* 89.583% */
+  letter-spacing: -3.84px;
+  color: #F9F8F5;
+}
+.u-power-title .h1 .style-1 {
+  background: var(--Coral-Gradient, linear-gradient(90deg, #FF7369 0%, #D83848 111.81%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--IvJournal);
+  font-style: italic;
+  padding: 30px;
+  margin: -30px;
+  margin-top: -35px;
+}
+.u-power-title p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  color: #F9F8F5;
+}
+
+.up-ques {
+	margin-bottom: 30px;
+}
+.up-ques__title {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.up-ques__title .h2 {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px; /* 103.571% */
+  letter-spacing: -2.24px;
+}
+.up-ques__title .buttons {
+  display: flex;
+  gap: 16px;
+}
+.up-ques__title .buttons .button {
+
+}
+
+.ind-input {
+  position: relative;
+}
+.ind-input .input {
+  font-size: 16px;
+  height: 63px;
+  padding: 8px 24px;
+  border-radius: 5px;
+  border: 1px solid #F9F8F5;
+  background: rgba(249, 248, 245, 0.10);
+  width: 100%; 
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  color: #F9F8F5;
+  transition: 0.3s;
+}
+.ind-input .input:focus {
+  border-color: #F9F8F5;
+  background: #F9F8F5;
+  color: #09100F;
+}
+.ind-input .send-button {
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  right: 26px;
+  transform: translate(0, -50%);
+  display: flex;
+  align-items: center;
+}
+.ind-input .send-button svg [fill="#AEAEAE"] {
+  transition: 0.3s;
+}
+.ind-input .send-button:hover svg [fill="#AEAEAE"] {
+  fill: #FF5C4D;
+}
+
+
+.up-ans {
+
+}
+.up-ans__r1 {
+  display: flex;
+}
+.up-ans__main__outer {
+  flex-grow: 1;
+}
+.up-ans__main {
+
+}
+.up-ans__m__title {
+  margin-bottom: 24px;
+}
+.up-ans__m__title .h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.96px;
+}
+.up-ans__m-box {
+  gap: 24px;
+  display: flex;
+}
+.up-ans__m-box__abtr {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background: #65C9BD;
+}
+.up-ans__m-box__abtr img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+}
+.up-ans__m-box__ms {
+  flex-grow: 1;
+  width: 0;
+}
+.up-ans__m-box__ms__field {
+  padding: 24px 16px;
+  min-height: 170px;
+  border-radius: 5px;
+  border: 1px solid var(--Greyish-Black, #6C6C6C);
+  width: 100%;
+  background: transparent;
+  resize: none;
+  color: #F9F8F5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+}
+.up-ans__m-box__ms__bt {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.up-ans__m-box__ms__bt__options {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.up-ans__m-box__ms__bt__options .button {
+
+}
+.up-ans__m-box__ms__bt__options .icon-button {
+  padding: 3px 3px;
+  color: #AEAEAE;
+  transition: 0.3s;
+}
+.up-ans__m-box__ms__bt__options .icon-button:hover {
+  color: var(--theme__color4);
+}
+.up-ans__m-box__ms__bt__ask {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.up-ans__m-box__ms__bt__ask p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  margin: 0;
+  color: #F9F8F5;
+}
+.up-ans__m-box__ms__bt__ask__options {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.up-ans__m-box__ms__bt__ask__options .option-a {
+  color: #F9F8F5;
+  transition: 0.3s;
+}
+.up-ans__m-box__ms__bt__ask__options .option-a:hover {
+  color: var(--theme__color4);
+}
+
+.up-ans__side {
+  flex-shrink: 0;
+  width: 384px;
+  padding-left: 32px;
+  margin-left: 32px;
+  border-left: 1px solid #fff;
+}
+
+.up-ans__side {
+
+}
+.xq-group {
+
+}
+.xq-group__title {
+  margin-bottom: 16px;
+  padding: 0 0 13px;
+  border-bottom: 1px solid #FF5C4D;
+}
+.xq-group__title h3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.xq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.xq_item {
+  padding: 8px 16px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  border-radius: 5px;
+
+  transition: 0.3s;
+}
+.xq_item:hover {
+  background: rgba(249, 248, 245, 0.10);
+}
+.xq_item .icon {
+  margin-top: 3px;
+  font-size: 19px;
+}
+.xq_item .text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+}
+/* ---u-power-section---end */
+
+
+/* ---contribute-section--- */
+.contribute-section {
+  padding: 80px 0;
+  background: #0A100F;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  position: relative;
+  z-index: 1;
+}
+.contribute-bottom-bg-shape {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.contribute-section__inner {
+  position: relative;
+}
+.cont-in-br-shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.contribute-content {
+  max-width: 688px;
+}
+.contribute-content .h3-d {
+  padding-bottom: 22px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #AEAEAE;
+  position: relative;
+}
+.contribute-content .h3-d .h3-shape {
+  position: absolute;
+  top: 10px;
+  right: 190px;
+}
+.contribute-content p {
+  font-size: 16px;
+  max-width: 650px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+}
+.contribute-content .bottom-button {
+  margin-top: 8px;
+}
+/* ---contribute-section---end */
+
+
+/* ---b-mark-section--- */
+.b-mark-section {
+  padding: 80px 0;
+  background: #F9F8F5;
+}
+.b-mark-section__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.b-mark__content {
+  width: 630px;
+}
+.h3-d {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px; /* 103.571% */
+  letter-spacing: -2.24px;
+}
+.h3-d .stl-1 {
+  font-family: var(--IvJournal);
+  font-style: italic;
+  font-size: 56px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: -2.24px;
+  background: linear-gradient(90deg, #FF7369 0%, #D83848 111.81%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: IvyJournal;
+  padding: 20px;
+  margin: -20px;
+  margin-top: -30px;
+}
+.b-mark__content h3 {
+  margin-bottom: 15px;
+}
+.b-mark__content p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+}
+.b-mark__content .el-shape {
+  margin-top: 26px;
+}
+.b-mark__content .el-shape img {
+
+}
+.b-mark__content .bottom-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+.b-mark__content .bottom-buttons .button {
+
+}
+/* ---b-mark-section---end */
+
+
+/* ---f2-section--- */
+.f2-section {
+  padding: 80px 0;
+  background: #0A100F;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.f2-sec-bottom-ellipse {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.f2-section__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.f2-sec__content {
+  width: 450px;
+}
+.f2-sec__content h3 {
+  margin-bottom: 14px;
+}
+.f2-sec__content h3 .stl-1 {
+  background: #65C9BD;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.f2-sec__content p {
+  margin-right: 70px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+}
+.f2-sec__content .bottom-button {
+  margin-top: 8px;
+}
+.f2-sec__image {
+
+}
+.f2-sec__image .img {
+
+}
+/* ---f2-section---end */
+
+
+/* ---love-p-section--- */
+.love-p-section {
+  padding: 80px 0;
+  background: linear-gradient(90deg, #FF7369 0%, #D83848 111.81%);
+}
+.love-p-section__inner {
+
+}
+.love-p__content {
+
+}
+.love-p__content .h3-d {
+  margin-bottom: 15px;
+}
+.love-p__content .h3-d .stl-1 {
+  background: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.love-p__content .title-line-1 {
+  margin-bottom: 25px;
+}
+.love-p__content p {
+  font-size: 16px;
+  max-width: 650px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+}
+.love-p__content .bottom-buttons {
+  margin-top: 8px;
+}
+/* ---love-p-section---end */

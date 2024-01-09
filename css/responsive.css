@@ -80,6 +80,54 @@
     .ria-m__s-side {
         width: 35%;
     }
+
+
+    /* ----- */
+    .u-power-title .h1 {
+        font-size: 56px;
+        margin-bottom: 16px;
+        line-height: 56px;
+        letter-spacing: -3.84px;
+    }
+    .up-ques__title .h2 {
+        font-size: 42px;
+        line-height: 45px;
+        letter-spacing: -2.04px;
+    }
+    .up-ans__m-box {
+        gap: 16px;
+        display: flex;
+    }
+    .up-ans__side {
+        width: 350px;
+        padding-left: 22px;
+        margin-left: 22px;
+    }
+    .h3-d {
+        font-size: 42px;
+        line-height: 44px;
+        letter-spacing: -2px;
+    }
+    .h3-d .stl-1 {
+        font-size: 42px;
+        line-height: 42px;
+        letter-spacing: -2px;
+    }
+    .contribute-content {
+        max-width: 500px;
+    }
+    .contribute-content .h3-d .h3-shape {
+        top: 10px;
+        right: 70px;
+    }
+    .contribute-content .h3-d {
+        padding-bottom: 18px;
+        margin-bottom: 22px;
+    }
+
+    .f2-sec__image {
+        width: 50%;
+    }
 }
 
 
@@ -282,6 +330,29 @@
         top: 15px;
         right: 17px;
     }
+
+
+    /* ----- */
+    .up-ans__r1 {
+        gap: 80px;
+        flex-wrap: wrap;
+    }
+    .up-ans__side {
+        width: 100%;
+        padding-left: 0px;
+        margin-left: 0px;
+        border-left: none;
+    }
+    .f2-sec__content p {
+        margin-right: 0px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    .love-p__content .title-line-1 {
+        max-width: 300px;
+    }
 }
 
 
@@ -480,6 +551,110 @@
     .recent-more-bottom {
         display: flex;
     }
+
+
+    /* ----- */
+    .u-power-top-shape {
+        display: none;
+    }
+    .u-power-section {
+        padding: 56px 0;
+    }
+    .u-power-title {
+        margin-bottom: 32px;
+    }
+    .t-mobile-hide {
+        display: none !important;
+    }
+
+    .up-ques__title-mobile-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+        gap: 16px;
+        width: max-content;
+    }
+    
+    .up-ans__m-box__ms__bt {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .up-ans__m-box__ms__bt__ask {
+        margin-top: 24px;
+        padding-top: 16px;
+        border-top: 1px solid #AEAEAE;
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .contribute-section {
+        padding: 56px 0;
+    }
+    .contribute-content .h3-d .h3-shape {
+        top: -26px;
+        right: -5px;
+    }
+    .cont-in-br-shape {
+        bottom: 0;
+        right: 30px;
+        width: 28px;
+    }
+
+    .b-mark-section {
+        padding: 56px 0;
+    }
+    .b-mark-section__inner {
+        flex-wrap: wrap;
+    }
+    .b-mark__content h3 {
+        margin-bottom: 10px;
+    }
+    .b-mark__content .el-shape {
+        margin-top: 12px;
+    }
+    .b-mark__content .bottom-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .b-mark-chart-side {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    .f2-section__inner {
+        flex-wrap: wrap;
+    }
+    .f2-sec__image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .f2-section {
+        padding: 56px 0;
+    }
+    .f2-sec-bottom-ellipse {
+        display: none;
+    }
+
+    .love-p-section {
+        padding: 56px 0;
+    }
+    .love-p__content .bottom-buttons {
+        padding-top: 24px;
+        border-top: 1px solid #09100F;
+    }
+    .love-p__content .title-line-1 {
+        margin-bottom: 20px;
+    }
+
+    
 }
 
 
@@ -531,5 +706,25 @@
     }
     .pod__mc-tab__wrapper {
         padding: 25px 15px;
+    }
+
+
+    /* ----- */
+    .u-power-title .h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+        line-height: 55px;
+        letter-spacing: -3px;
+    }
+    .up-ques__title .h2 {
+        font-size: 38px;
+    }
+    .h3-d {
+        font-size: 36px;
+        line-height: 38px;
+    }
+    .h3-d .stl-1 {
+        font-size: 36px;
+        line-height: 36px;
     }
 }

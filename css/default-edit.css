@@ -104,6 +104,11 @@
   }
 
 /* small-tools */
+@media (min-width: 765px) {
+    .ex-t-mobile-hide {
+        display: none !important;
+    }
+}
 .underline {
     text-decoration: underline !important;
 }
