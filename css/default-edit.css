@@ -112,6 +112,9 @@
 .mb-0 {
     margin-bottom: 0 !important;
 }
+.rotate-45 {
+    transform: rotate(45deg) !important;
+}
 .underline {
     text-decoration: underline !important;
 }
