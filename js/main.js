@@ -39,55 +39,58 @@
   }
 }
 
-// slider
-{
-  let pSlider = document.querySelector(".product-slider-active");
-  if (pSlider !== null) {
-    let pSliderDotsParent = document.querySelector(".product-slider-dots");
-    let pSliderDots = document.querySelectorAll(".product-slider-dots .dot");
-    let pSliderElements = pSlider.children;
-    console.log(typeof pSliderElements);
-    pSliderDots.forEach((dot) => {
-      dot.addEventListener("click", function () {
-        //dots-update
-        pSliderDots.forEach((dotE) => {
-          dotE.classList.remove("active");
-        });
-        dot.classList.add("active");
 
-        // slider-update
-        Array.from(pSliderElements).forEach((eachElm) => {
-          eachElm.classList.remove("active");
-        });
-        let dotIndex = Array.prototype.indexOf.call(
-          pSliderDotsParent.children,
-          dot
-        );
-        let targetSlide = document.querySelector(
-          `.product-slider-active .slider-item:nth-child(${dotIndex + 1})`
-        );
-        targetSlide.classList.add("active");
-      });
+//modal code
+{
+  //modal-Open-button
+  let modalOpenButton = document.querySelectorAll("[toggle-modal]");
+  modalOpenButton.forEach((item) => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      // variables
+      let clickedButton = this;
+      let targetModal = document.querySelector(
+        clickedButton.getAttribute("toggle-modal")
+      );
+      //action
+      modalOpen(targetModal);
+    });
+  });
+  //modal-close-button
+  let modalCloseButton = document.querySelectorAll("[modal-dismiss]");
+  modalCloseButton.forEach((item) => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      // action
+      modalClose();
+    });
+  });
+  // modal-close-when outside click of its content
+  let allModal = document.querySelectorAll(".custom-modal:not(.modal-static)"); //except '.modal-static'
+  allModal.forEach((modal) => {
+    modal.addEventListener("click", function (event) {
+      // variables
+      let innerContent = this.querySelector(".modal-content");
+      const outsideClick =
+        typeof event.composedPath === "function" &&
+        !event.composedPath().includes(innerContent);
+      // action
+      if (outsideClick) {
+        modalClose();
+      }
+    });
+  });
+  // modalOpen function
+  function modalOpen(targetModal) {
+    targetModal.classList.add("modal-show");
+    document.querySelector("body").classList.add("modal-opened");
+  }
+  // modalClose function
+  function modalClose() {
+    let allModal = document.querySelectorAll(".custom-modal");
+    allModal.forEach((eachModal) => {
+      eachModal.classList.remove("modal-show");
+      document.querySelector("body").classList.remove("modal-opened");
     });
   }
-}
-
-//filter-dropdown-height
-window.addEventListener("resize", function () {
-  filterHeightAdjust();
-});
-window.addEventListener("DOMContentLoaded", function () {
-  this.setTimeout(function () {
-    filterHeightAdjust();
-  }, 10);
-});
-function filterHeightAdjust() {
-  let productCase = document.querySelector(".product__case");
-  let filterPanelDesktop = document.querySelector(
-    "#case-filter__panel__desktop"
-  );
-  filterPanelDesktop.style.setProperty(
-    "--height-data",
-    productCase.offsetHeight + "px"
-  );
 }

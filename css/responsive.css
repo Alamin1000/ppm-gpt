@@ -654,6 +654,29 @@
         margin-bottom: 20px;
     }
 
+
+    .modal-mobile-stick-bottom .modal-inner {
+        padding: 0 12px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 0;
+    }
+    .modal-mobile-stick-bottom .modal-inner .modal-content {
+        padding-bottom: 0;
+    }
+    .modal-mobile-stick-bottom .modal-content-visible-area {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .modal-content-visible-area {
+        padding: 40px 32px;
+    }
+    .m-prompt-list {
+        max-height: 544px;
+    }
     
 }
 
@@ -726,5 +749,12 @@
     .h3-d .stl-1 {
         font-size: 36px;
         line-height: 36px;
+    }
+
+    .m-prompt-list {
+        max-height: 345px;
+    }
+    .modal-content-visible-area {
+        padding: 30px 20px 20px;
     }
 }
